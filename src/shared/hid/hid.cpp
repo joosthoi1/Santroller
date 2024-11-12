@@ -956,7 +956,7 @@ uint8_t handle_serial_command(uint8_t request, uint16_t wValue, uint8_t *respons
                 ledState[led].select = 0;
                 return 0;
             }
-            memcpy(&ledState[led], response_buffer, sizeof(Led_WS2812_t));
+            memcpy(&ledState[led], response_buffer, sizeof(Led_WS2812W_t));
             ledState[led].select = 1;
             return 0;
         }

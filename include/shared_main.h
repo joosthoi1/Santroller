@@ -60,10 +60,10 @@ typedef struct {
 typedef struct {
     // If this bit is set, then an led effect (like star power) has overridden the leds
     uint8_t select;
-    uint8_t r[4];
-    uint8_t g[4];
-    uint8_t b[4];
-    uint8_t w[4];
+    uint8_t r;
+    uint8_t g;
+    uint8_t b;
+    uint8_t w;
 } __attribute__((packed)) Led_WS2812W_t;
 extern uint8_t ws2812_bits[4];
 extern uint8_t led_tmp;
